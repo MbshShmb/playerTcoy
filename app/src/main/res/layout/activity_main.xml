@@ -1,0 +1,1898 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music1"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music2"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music3"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music4"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music5"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music6"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music7"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music8"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music9"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music10"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music11"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music12"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music13"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music14"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music15"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music16"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music17"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music18"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music19"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music20"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music21"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music22"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music23"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music24"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music25"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music26"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music27"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music28"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music29"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music30"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music31"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music32"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music33"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music34"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music35"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music36"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music37"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music38"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music39"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music40"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music41"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music42"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music43"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music44"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music45"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music46"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music47"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music48"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music49"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music50"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music51"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music52"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music53"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button54"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music54"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music55"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button56"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music56"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button57"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music57"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button58"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music58"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button59"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music59"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music60"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music61"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button62"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music62"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button63"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music63"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button64"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music64"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button65"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music65"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button66"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music66"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button67"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music67"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button68"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music68"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button69"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music69"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button70"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music70"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button71"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music71"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button72"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music72"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button73"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music73"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button74"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music74"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button75"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music75"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button76"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music76"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button77"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music77"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded,TooManyViews" />
+
+
+            <Button
+                android:id="@+id/button78"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music78"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button79"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music79"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button80"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music80"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button81"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music81"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button82"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music82"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button83"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music83"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button84"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music84"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button85"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music85"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button86"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music86"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button87"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music87"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button88"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music88"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button89"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music89"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button90"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music90"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button91"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music91"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button92"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music92"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button93"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music93"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button94"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music94"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button95"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music95"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button96"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music96"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button97"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music97"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button98"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music98"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button99"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music99"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music100"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music101"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button102"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music102"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button103"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music103"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button104"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music104"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button105"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music105"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button106"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music106"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button107"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music107"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button108"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music108"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button109"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music109"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button110"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music110"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music111"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button112"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music112"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button113"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music113"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button114"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music114"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button115"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music115"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button116"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music116"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button117"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music117"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+
+            <Button
+                android:id="@+id/button118"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/play_icon"
+                android:drawableLeft="@drawable/play_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|start|right"
+                android:text="@string/music118"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:backgroundTint="#52504747"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/play"
+        android:contentDescription="@string/play" />
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/play"
+        app:srcCompat="@drawable/next"
+        android:contentDescription="@string/next" />
+
+    <ImageView
+        android:id="@+id/past"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toStartOf="@+id/play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/past"
+        android:contentDescription="@string/past" />
+
+    <ImageView
+        android:id="@+id/repeat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/repeat"
+        android:contentDescription="@string/repeat" />
+
+    <TextView
+        android:id="@+id/currentPos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginRight="135dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/notSelected"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
