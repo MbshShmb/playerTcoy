@@ -1,6 +1,11 @@
 package com.example.myapplication
 
 import android.annotation.SuppressLint
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.PendingIntent
+import android.content.Context
+import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.media.MediaPlayer
 import android.os.Build
@@ -12,13 +17,14 @@ import android.widget.SeekBar
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    private var mPlayer: MediaPlayer? = null
+    var mPlayer: MediaPlayer? = null
     private var whatPlaying: Int? = null
-    private var whatPlayingButton: Button? = null
+    var whatPlayingButton: Button? = null
     private var loop: Boolean = false
     private var handler: Handler = Handler(Looper.getMainLooper())
     private lateinit var playIcon: Drawable
@@ -34,7 +40,16 @@ class MainActivity : AppCompatActivity() {
             R.raw.music92, R.raw.music93, R.raw.music94, R.raw.music95, R.raw.music96, R.raw.music97, R.raw.music98, R.raw.music99, R.raw.music100, R.raw.music101, R.raw.music102, R.raw.music103, R.raw.music104, R.raw.music105,
             R.raw.music106, R.raw.music107, R.raw.music108, R.raw.music109, R.raw.music110, R.raw.music111, R.raw.music112, R.raw.music113, R.raw.music114, R.raw.music115, R.raw.music116, R.raw.music117, R.raw.music118
     )
+    private lateinit var openApp: Intent
+    private lateinit var pendingIntent: PendingIntent
     private lateinit var buttons: Array<Button>
+    private lateinit var manager: NotificationManager
+    private lateinit var notification: NotificationCompat.Builder
+
+    companion object {
+        const val NOTIFY_ID = 1
+        const val CHANNEL_ID = "CHANNEL_ID"
+    }
 
     @SuppressLint("UseCompatLoadingForDrawables")
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
@@ -42,12 +57,27 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        openApp = Intent(this, MainActivity::class.java)
+        openApp.apply {
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        }
+        pendingIntent = PendingIntent.getActivity(this, 0, intent, 0)
+
+        manager = applicationContext.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+
         buttons = listOf(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11, button12, button13, button14, button15, button16, button17, button18, button19, button20, button21, button22, button23, button24, button25, button26, button27,
-                button28, button29, button30, button31, button32, button33, button34, button35, button36, button37, button38, button39, button40, button41, button42, button43, button44, button45, button46, button47, button48, button49, button50, button51, button52, button53, button54, button55,
-                button56, button57, button58, button59, button60, button61, button62, button63, button64, button65, button66, button67, button68, button69, button70, button71, button72, button73, button74, button75, button76, button77, button78, button79, button80, button81, button82, button83,
-                button84, button85, button86, button87, button88, button89, button90, button91, button92, button93, button94, button95, button96, button97, button98, button99, button100, button101, button102, button103, button104, button105, button106, button107, button108, button109, button110, button111, button112, button113, button114, button115, button116, button117, button118).toTypedArray()
+            button28, button29, button30, button31, button32, button33, button34, button35, button36, button37, button38, button39, button40, button41, button42, button43, button44, button45, button46, button47, button48, button49, button50, button51, button52, button53, button54, button55,
+            button56, button57, button58, button59, button60, button61, button62, button63, button64, button65, button66, button67, button68, button69, button70, button71, button72, button73, button74, button75, button76, button77, button78, button79, button80, button81, button82, button83,
+            button84, button85, button86, button87, button88, button89, button90, button91, button92, button93, button94, button95, button96, button97, button98, button99, button100, button101, button102, button103, button104, button105, button106, button107, button108, button109, button110, button111, button112, button113, button114, button115, button116, button117, button118).toTypedArray()
 
         for (n in 0..buttons.size.minus(1)) { initButton(buttons[n], musics[n]) }
+
+        notification = NotificationCompat.Builder(applicationContext, CHANNEL_ID)
+            .setAutoCancel(false)
+            .setSmallIcon(R.drawable.play)
+            .setContentIntent(pendingIntent)
+            .setOngoing(true)
+            .setPriority(NotificationCompat.PRIORITY_HIGH)
 
         next.setOnClickListener { playNext() }
         past.setOnClickListener { playPast() }
@@ -68,8 +98,19 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
+    private fun createChannelIfNeeded(manager: NotificationManager) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            manager.createNotificationChannel(NotificationChannel(CHANNEL_ID, CHANNEL_ID, NotificationManager.IMPORTANCE_DEFAULT))
+        }
+    }
+
+    override fun onDestroy() {
+        manager.cancelAll()
+        super.onDestroy()
+    }
+
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
-    private fun playNext() {
+    fun playNext() {
         if (mPlayer == null) Toast.makeText(applicationContext, "Выберите песню!", Toast.LENGTH_SHORT).show()
         else if (mPlayer != null && whatPlayingButton == buttons[buttons.size - 1]) playMusic(buttons[0], musics[0])
         else {
@@ -78,7 +119,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
-    private fun playPast() {
+    fun playPast() {
         if (mPlayer == null) Toast.makeText(applicationContext, "Выберите песню!", Toast.LENGTH_SHORT).show()
         else if (mPlayer != null &&whatPlayingButton == buttons[0]) playMusic(buttons[buttons.size - 1], musics[musics.size - 1])
         else {
@@ -87,7 +128,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
-    private fun playButton() {
+    fun playButton() {
         if (mPlayer != null && mPlayer?.isPlaying!!) {
             mPlayer?.pause()
             play.setImageResource(R.drawable.play)
@@ -118,7 +159,7 @@ class MainActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
-    private fun playMusic(button: Button, music: Int) {
+    fun playMusic(button: Button, music: Int) {
         if (mPlayer != null && (mPlayer?.duration!! == MediaPlayer.create(this, music).duration)) {
             if (mPlayer?.isPlaying!!) {
                 mPlayer?.pause()
@@ -146,6 +187,9 @@ class MainActivity : AppCompatActivity() {
             button.setCompoundDrawablesWithIntrinsicBounds(pauseIcon, null, null, null)
             whatPlaying = music
             mPlayer?.start()
+            notification.setContentText("Сейчас играет: ${whatPlayingButton?.text}")
+            createChannelIfNeeded(manager)
+            manager.notify(NOTIFY_ID, notification.build())
             name.text = whatPlayingButton?.text
             if (name.length() in 22..30) name.textSize = 20F
             else if (name.length() > 30) name.textSize = 17F
