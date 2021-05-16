@@ -8,6 +8,20 @@
     android:background="@drawable/gradient_background"
     tools:context=".MainActivity">
 
+    <com.gauravk.audiovisualizer.visualizer.BlastVisualizer
+        android:id="@+id/visualizerMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        app:avColor="@color/white"
+        app:avDensity="0.3"
+        app:avSpeed="normal"
+        app:avType="fill"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name" />
+
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
@@ -1160,7 +1174,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="17sp"
                 app:backgroundTint="#52504747"
-                tools:ignore="RtlHardcoded" />
+                tools:ignore="RtlHardcoded,TooManyViews" />
 
 
             <Button
@@ -1811,11 +1825,11 @@
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="7dp"
+        android:contentDescription="@string/play"
         app:layout_constraintBottom_toTopOf="@+id/seekBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/play"
-        android:contentDescription="@string/play" />
+        app:srcCompat="@drawable/play" />
 
     <ImageView
         android:id="@+id/next"
@@ -1824,11 +1838,11 @@
         android:layout_marginEnd="95dp"
         android:layout_marginRight="95dp"
         android:layout_marginBottom="7dp"
+        android:contentDescription="@string/next"
         app:layout_constraintBottom_toTopOf="@+id/seekBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/play"
-        app:srcCompat="@drawable/next"
-        android:contentDescription="@string/next" />
+        app:srcCompat="@drawable/next" />
 
     <ImageView
         android:id="@+id/past"
@@ -1837,11 +1851,11 @@
         android:layout_marginStart="75dp"
         android:layout_marginLeft="75dp"
         android:layout_marginBottom="7dp"
+        android:contentDescription="@string/past"
         app:layout_constraintBottom_toTopOf="@+id/seekBar"
         app:layout_constraintEnd_toStartOf="@+id/play"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/past"
-        android:contentDescription="@string/past" />
+        app:srcCompat="@drawable/past" />
 
     <ImageView
         android:id="@+id/repeat"
@@ -1850,10 +1864,10 @@
         android:layout_marginEnd="46dp"
         android:layout_marginRight="46dp"
         android:layout_marginBottom="10dp"
+        android:contentDescription="@string/repeat"
         app:layout_constraintBottom_toTopOf="@+id/seekBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/repeat"
-        android:contentDescription="@string/repeat" />
+        app:srcCompat="@drawable/repeat" />
 
     <TextView
         android:id="@+id/currentPos"

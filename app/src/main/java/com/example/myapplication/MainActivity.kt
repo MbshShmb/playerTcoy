@@ -12,6 +12,8 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.view.ContextMenu
+import android.view.View
 import android.widget.Button
 import android.widget.SeekBar
 import android.widget.Toast
@@ -45,10 +47,14 @@ class MainActivity : AppCompatActivity() {
     private lateinit var buttons: Array<Button>
     private lateinit var manager: NotificationManager
     private lateinit var notification: NotificationCompat.Builder
+    private var backgroundLayout = R.drawable.gradient_background
+    private var isAutoNext = true
+    private var isVisualize = true
 
     companion object {
         const val NOTIFY_ID = 1
         const val CHANNEL_ID = "CHANNEL_ID"
+        const val CODE = 12
     }
 
     @SuppressLint("UseCompatLoadingForDrawables")
@@ -56,6 +62,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        registerForContextMenu(play)
 
         openApp = Intent(this, MainActivity::class.java)
         openApp.apply {
@@ -96,6 +104,26 @@ class MainActivity : AppCompatActivity() {
             override fun onStartTrackingTouch(seekBar: SeekBar?) {}
             override fun onStopTrackingTouch(seekBar: SeekBar?) {}
         })
+    }
+
+    override fun onCreateContextMenu(menu: ContextMenu?, v: View?, menuInfo: ContextMenu.ContextMenuInfo?) {
+        super.onCreateContextMenu(menu, v, menuInfo)
+        val intent = Intent(this, SettingsActivity::class.java)
+        intent.putExtra("background", backgroundLayout)
+        intent.putExtra("isAutoNext", isAutoNext)
+        intent.putExtra("isVisualize", isVisualize)
+        startActivityForResult(intent, CODE)
+    }
+
+    @SuppressLint("UseCompatLoadingForDrawables")
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (data == null) return
+        if (data.extras?.getInt("background") != 0) clayout.background = data.extras?.let { getDrawable(it.getInt("background")) }
+        if (data.extras?.getInt("background") != 0) backgroundLayout = data.extras?.getInt("background")!!
+        isAutoNext = data.extras?.getBoolean("isAutoNext") == true
+        isVisualize = data.extras?.getBoolean("isVisualize") == true
     }
 
     private fun createChannelIfNeeded(manager: NotificationManager) {
@@ -199,6 +227,12 @@ class MainActivity : AppCompatActivity() {
             secs2 = mPlayer?.duration!! / 1000
             duration.text = "%d:%02d".format(secs2!! / 60, secs2!! % 60)
             seekBar.max = mPlayer?.duration!!
+
+            if (isVisualize) {
+                val sessionId = mPlayer?.audioSessionId
+                if (sessionId != -1) visualizerMusic.setAudioSessionId(sessionId!!)
+            }
+
             handlerFunctions()
         }
     }
@@ -208,14 +242,14 @@ class MainActivity : AppCompatActivity() {
 
     private fun handlerFunctions() {
         handler.post(object : Runnable {
-            @SuppressLint("SetTextI18n")
+            @SuppressLint("SetTextI18n", "WrongConstant")
             @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
             override fun run() {
                 seekBar.progress = mPlayer?.currentPosition!!
                 secs = mPlayer?.currentPosition!! / 1000
                 currentPos.text = "%d:%02d".format(secs!! / 60, secs!! % 60)
                 if (mPlayer?.duration!! == mPlayer?.currentPosition!!) mPlayer?.stop()
-                if ((!mPlayer?.isPlaying!! && !mPlayer?.isLooping!!) && (seekBar.progress == seekBar.max)) {
+                if (( isAutoNext && (!mPlayer?.isPlaying!! && !mPlayer?.isLooping!!)) && (seekBar.progress == seekBar.max)) {
                     playNext()
                 }
 
@@ -230,6 +264,9 @@ class MainActivity : AppCompatActivity() {
 
                 if (mPlayer?.isLooping!!) repeat.setImageResource(R.drawable.loop)
                 else if (!mPlayer?.isLooping!!) repeat.setImageResource(R.drawable.repeat)
+
+                if (!isVisualize) visualizerMusic.visibility = -1
+                else visualizerMusic.visibility = 0
 
                 handler.postDelayed(this, 1)
             }

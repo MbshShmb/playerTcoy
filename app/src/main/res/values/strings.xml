@@ -123,4 +123,8 @@
     <string name="past">past</string>
     <string name="next">next</string>
     <string name="play">play</string>
+    <string name="done">Сохранить</string>
+    <string name="backgroundText">Задний фон:</string>
+    <string name="autoNext">Автопереключение песен</string>
+    <string name="vizualize">Визуализатор</string>
 </resources>
