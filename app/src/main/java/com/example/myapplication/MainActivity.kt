@@ -6,6 +6,7 @@ import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.drawable.Drawable
 import android.media.MediaPlayer
 import android.os.Build
@@ -50,6 +51,12 @@ class MainActivity : AppCompatActivity() {
     private var backgroundLayout = R.drawable.gradient_background
     private var isAutoNext = true
     private var isVisualize = true
+    private lateinit var sPref: SharedPreferences
+    private lateinit var sPrefEdit: SharedPreferences.Editor
+
+    private var isAutoNextKey = "autoNext"
+    private var isVisualizeKey = "visualize"
+    private var backgroundKey = "background"
 
     companion object {
         const val NOTIFY_ID = 1
@@ -62,6 +69,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        sPref = getPreferences(MODE_PRIVATE)
+        clayout.background = getDrawable(sPref.getInt(backgroundKey, R.drawable.gradient_background))
+        backgroundLayout = sPref.getInt(backgroundKey, R.drawable.gradient_background)
+        isAutoNext = sPref.getBoolean(isAutoNextKey, true)
+        isVisualize = sPref.getBoolean(isVisualizeKey, true)
 
         registerForContextMenu(play)
 
@@ -124,6 +137,13 @@ class MainActivity : AppCompatActivity() {
         if (data.extras?.getInt("background") != 0) backgroundLayout = data.extras?.getInt("background")!!
         isAutoNext = data.extras?.getBoolean("isAutoNext") == true
         isVisualize = data.extras?.getBoolean("isVisualize") == true
+
+        sPref = getPreferences(MODE_PRIVATE)
+        sPrefEdit = sPref.edit()
+        sPrefEdit.putInt(backgroundKey, backgroundLayout)
+        sPrefEdit.putBoolean(isAutoNextKey, isAutoNext)
+        sPrefEdit.putBoolean(isVisualizeKey, isVisualize)
+        sPrefEdit.apply()
     }
 
     private fun createChannelIfNeeded(manager: NotificationManager) {
